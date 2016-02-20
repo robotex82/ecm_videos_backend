@@ -1,0 +1,3 @@
+= Ecm::Videos::Backend
+
+This project rocks and uses MIT-LICENSE.

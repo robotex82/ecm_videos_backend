@@ -1,0 +1,7 @@
+= table.column :preview_image, as: :thumbnail, style: :default_thumb, link_to_url: Proc.new { |resource| url_for(resource) }
+= table.association :category, label_method: :name
+= table.column :name
+= table.column :description
+= table.timestamps
+= table.acts_as_list_actions
+= table.acts_as_published_actions
