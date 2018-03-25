@@ -1,4 +1,4 @@
-Ecm::UserArea::Backend.configure do |config|  
+Ecm::Videos::Backend.configure do |config|
   # Set the resources, that will be shown in the backend menu.
   # 
   # Default: config.registered_controllers = -> {[

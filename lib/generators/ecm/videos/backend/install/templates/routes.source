@@ -1,4 +1,4 @@
 
   localized do
-    mount Ecm::Videos::Backend::Engine => '/backend/ecm/videos'
+    mount Ecm::Videos::Backend::Engine, at: '/backend/ecm-videos-backend-engine'
   end

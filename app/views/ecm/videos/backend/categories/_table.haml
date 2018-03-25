@@ -1,7 +1,7 @@
 = table.column :preview_image, as: :thumbnail, style: :default_thumb, link_to_url: Proc.new { |resource| url_for(resource) }
-= table.column :locale
-= table.column :name
+= table.column :locale, sort: true
+= table.column :name, sort: true
 = table.column :videos_count
-= table.column :description
-= table.timestamps
+= table.column :description, sort: true
+= table.timestamps sort: true
 = table.acts_as_published_actions

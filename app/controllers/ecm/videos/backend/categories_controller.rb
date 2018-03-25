@@ -2,7 +2,8 @@ module Ecm
   module Videos
     module Backend
       class CategoriesController < Itsf::Backend::Resource::BaseController
-        include Controller::ActsAsPublishedConcern
+        include ResourcesController::Sorting
+        include ResourcesController::ActsAsPublishedConcern
         
         def self.resource_class
           Ecm::Videos::Category
