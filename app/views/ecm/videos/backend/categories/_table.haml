@@ -1,4 +1,6 @@
-= table.column :preview_image, as: :thumbnail, style: :default_thumb, link_to_url: Proc.new { |resource| url_for(resource) }
+= table.column :preview_image do |resource|
+  - link_to(url_for(resource)) do
+    - image_tag(resource.preview_image.url(:default_thumb))
 = table.column :locale, sort: true
 = table.column :name, sort: true
 = table.column :videos_count
