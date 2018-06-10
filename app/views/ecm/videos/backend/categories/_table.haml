@@ -1,6 +1,7 @@
 = table.column :preview_image do |resource|
-  - link_to(url_for(resource)) do
-    - image_tag(resource.preview_image.url(:default_thumb))
+  - if resource.preview_image.present?
+    - link_to(url_for(resource)) do
+      - image_tag(resource.preview_image.url(:default_thumb))
 = table.column :locale, sort: true
 = table.column :name, sort: true
 = table.column :videos_count
